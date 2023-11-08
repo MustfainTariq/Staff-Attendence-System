@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="John Doe"
+        android:textColor="#0098CB"
+        android:textSize="30sp" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+    </CalendarView>
+
+    <TextView
+        android:id="@+id/attendencestatustext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/calendarView"
+        android:text="Attendence Status"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/attendence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attendencestatustext"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Present"
+        android:textColor="#357137"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/checkintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attendence"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Check In:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attendence"
+        android:layout_toRightOf="@id/checkintext"
+        android:text="8:15 AM"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="#FF0000">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkintext"
+        android:layout_toRightOf="@id/checkintext"
+        android:text="5:00 PM"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="#00BCD4">
+    </TextView>
+
+    <TextView
+        android:id="@+id/checkouttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkintext"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Check Out:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/eventtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkouttext"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Events:"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/eventdestext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventtext"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Lorem ipsum dolor sit amet consectetur. Erat auctor"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/baseline_add_circle_24"
+        android:layout_below="@id/eventdestext"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+    </ImageButton>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
