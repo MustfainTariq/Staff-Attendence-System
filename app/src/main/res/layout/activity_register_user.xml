@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register_user">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/fast_logo"
+        android:layout_centerHorizontal="true"/>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logo">
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register New User"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+    <EditText
+        android:textColor="#393939"
+        android:layout_marginTop="35dp"
+        android:hint="NUCES ID"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:id="@+id/nuid"
+        android:background="@drawable/edit_text_round"
+        /><EditText
+        android:textColor="#393939"
+        android:layout_marginTop="10dp"
+        android:hint="Department"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nuid"
+        android:id="@+id/department"
+        android:background="@drawable/edit_text_round"
+        /><EditText
+    android:textColor="#393939"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/department"
+        android:id="@+id/pass"
+        android:background="@drawable/edit_text_round"
+        /><EditText
+        android:textColor="#393939"
+        android:layout_marginTop="10dp"
+        android:hint="Confirm Password"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:id="@+id/reneterpass"
+        android:background="@drawable/edit_text_round"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/reneterpass"
+        android:id="@+id/checkin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+
+        android:background="@drawable/button_round"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:backgroundTint="@color/white"
+        android:id="@+id/reg_fingerprint"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="1dp"
+        android:layout_below="@id/checkin"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Register Fingerprint"
+        android:textColor="#592a6d"
+        android:shadowColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:shadowColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_height="40dp"
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/reg_fingerprint"
+        android:text="Register Face ID"
+        android:textSize="20dp"
+        android:textColor="#592a6d"
+        android:id="@+id/reg_face"
+
+        />
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/reg_face"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have an account?"
+            android:textColor="#000"/>
+        <TextView
+
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Sign In"
+            android:textColor="#592a6d"/>
+
+    </LinearLayout></RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

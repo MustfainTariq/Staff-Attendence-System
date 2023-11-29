@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "948916598538",
+    "project_id": "staffattendencedb",
+    "storage_bucket": "staffattendencedb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948916598538:android:7a519d2f954dd04b3aacf3",
+        "android_client_info": {
+          "package_name": "com.project.i200770_i200608_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCViEH-TPmm62g02t136nktN_uoEUg3LEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

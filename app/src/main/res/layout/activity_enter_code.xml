@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".check_in">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/fast_logo"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+
+        android:layout_below="@id/logo"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Code"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/text"
+        android:id="@+id/ll"
+        >
+        <EditText
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#393939"
+            android:layout_marginTop="10dp"
+            android:text="1"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/c1"
+            android:background="@drawable/edit_text_round"
+            /><EditText
+        android:layout_weight="1"
+        android:textAlignment="center"
+            android:textColor="#393939"
+            android:layout_marginTop="10dp"
+            android:text="3"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/c2"
+            android:background="@drawable/edit_text_round"
+            /><EditText
+        android:textAlignment="center"
+            android:textColor="#393939"
+            android:layout_marginTop="10dp"
+            android:text="5"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+        android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/c3"
+            android:background="@drawable/edit_text_round"
+            /><EditText
+            android:textColor="#393939"
+            android:layout_marginTop="10dp"
+            android:text="2"
+        android:textAlignment="center"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/c4"
+            android:background="@drawable/edit_text_round"
+            />
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ll"
+        android:id="@+id/checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Code"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+
+        android:background="@drawable/button_round"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/checkout"
+        android:layout_marginTop="10dp"
+        android:text="Resend Code"
+        android:textSize="20dp"
+        android:textColor="#592a6d"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Resend"
+            android:textColor="#592a6d"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
