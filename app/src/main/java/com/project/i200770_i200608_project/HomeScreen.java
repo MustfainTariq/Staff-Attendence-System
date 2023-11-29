@@ -1,4 +1,4 @@
-package com.ass2.i200770_i200608_projectui;
+package com.project.i200770_i200608_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
-import com.ass2.i200770_i200608_projectui.databinding.ActivityHomescreenBinding;
+import com.project.i200770_i200608_project.databinding.ActivityHomescreenBinding;
 
 public class HomeScreen extends AppCompatActivity {
 

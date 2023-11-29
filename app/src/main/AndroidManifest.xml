@@ -28,6 +28,27 @@
             android:name=".ProfileFragment"
             android:exported="false" />
         <activity
+            android:name=".register_fingerprint"
+            android:exported="false" />
+        <activity
+            android:name=".register_face"
+            android:exported="false" />
+        <activity
+            android:name=".enter_code"
+            android:exported="false" />
+        <activity
+            android:name=".reset_password"
+            android:exported="false" />
+        <activity
+            android:name=".register_user"
+            android:exported="false" />
+        <activity
+            android:name=".check_in"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
