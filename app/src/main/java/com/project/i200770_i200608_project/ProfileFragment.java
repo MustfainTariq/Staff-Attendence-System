@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -53,7 +54,6 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile,container,false);
-
         logout = view.findViewById(R.id.logout);
         name = view.findViewById(R.id.name);
         department = view.findViewById(R.id.department);
@@ -94,10 +94,6 @@ public class ProfileFragment extends Fragment {
         }
 
     });
-
-
-
-
 
 
 
