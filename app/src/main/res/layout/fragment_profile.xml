@@ -39,14 +39,14 @@
                 </androidx.cardview.widget.CardView>
 
                 <Button
-                    android:id="@+id/uploadphoto"
+                    android:id="@+id/logout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#0098CB"
-                    android:layout_marginLeft="140dp"
+                    android:layout_marginLeft="110dp"
                     android:textSize="12dp"
                     android:layout_marginTop="40dp"
-                    android:text="Upload photo">
+                    android:text="Log Out">
                 </Button>
 
             </LinearLayout>
@@ -135,7 +135,7 @@
                 android:layout_below="@id/phone"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="40dp"
-                android:text="Department"
+                android:text="Designation"
                 android:textStyle="bold">
 
             </TextView>
@@ -187,7 +187,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="About Sid"
+                android:text="About"
                 android:layout_below="@id/block1"
                 android:textStyle="bold"
                 android:layout_marginTop="20dp"

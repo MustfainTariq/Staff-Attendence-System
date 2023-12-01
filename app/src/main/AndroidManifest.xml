@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:allowBackup="true"
@@ -12,6 +15,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I200770_i200608_ProjectUI"
         tools:targetApi="31">
+        <activity
+            android:name=".register_fingerprint"
+            android:exported="false" />
+        <activity
+            android:name=".register_face"
+            android:exported="false" />
+        <activity
+            android:name=".enter_code"
+            android:exported="false" />
+        <activity
+            android:name=".reset_password"
+            android:exported="false" />
+        <activity
+            android:name=".register_user"
+            android:exported="false" />
+        <activity
+            android:name=".check_in"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="false" />
         <activity
             android:name=".HomeScreen"
             android:exported="false" />

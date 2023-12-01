@@ -109,24 +109,27 @@
         android:textStyle="bold"
         android:textSize="20sp" />
 
-    <TextView
+    <EditText
         android:id="@+id/eventdestext"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/eventtext"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
         android:text="Lorem ipsum dolor sit amet consectetur. Erat auctor"
-        android:textSize="15sp" />
+        android:textSize="20sp" />
 
     <ImageButton
         android:layout_width="50dp"
+        android:id="@+id/addbutton"
         android:layout_height="50dp"
         android:background="@drawable/baseline_add_circle_24"
         android:layout_below="@id/eventdestext"
         android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="15dp">
     </ImageButton>
 
 
