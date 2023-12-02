@@ -38,19 +38,20 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_below="@id/calendarView"
-        android:text="Attendence Status"
+        android:text="Attendence Status: "
         android:textColor="#000000"
+        android:textStyle="bold"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/attendence"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/attendencestatustext"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:text="Present"
-        android:textColor="#357137"
+        android:layout_below="@id/calendarView"
+        android:text="Absent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="110dp"
+        android:textColor="#F44336"
         android:textStyle="bold"
         android:textSize="20sp" />
 
@@ -61,15 +62,17 @@
         android:layout_below="@id/attendence"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
+        android:textStyle="bold"
         android:text="Check In:"
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/checkintime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/attendence"
         android:layout_toRightOf="@id/checkintext"
-        android:text="8:15 AM"
+        android:text="No Record"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="25dp"
@@ -77,11 +80,12 @@
     </TextView>
 
     <TextView
+        android:id="@+id/checkouttime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/checkintext"
         android:layout_toRightOf="@id/checkintext"
-        android:text="5:00 PM"
+        android:text="No Record"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="25dp"
@@ -94,6 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/checkintext"
         android:layout_marginLeft="30dp"
+        android:textStyle="bold"
         android:layout_marginTop="10dp"
         android:text="Check Out:"
         android:textSize="20sp" />
@@ -101,6 +106,7 @@
     <TextView
         android:id="@+id/eventtext"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:layout_below="@id/checkouttext"
         android:layout_marginLeft="30dp"
@@ -118,7 +124,7 @@
         android:layout_below="@id/eventtext"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
-        android:text="Lorem ipsum dolor sit amet consectetur. Erat auctor"
+        android:text=""
         android:textSize="20sp" />
 
     <ImageButton

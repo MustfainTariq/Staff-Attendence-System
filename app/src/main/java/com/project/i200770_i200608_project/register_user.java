@@ -23,6 +23,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 public class register_user extends AppCompatActivity {
 
@@ -91,31 +92,8 @@ public class register_user extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
 
-//                            DocumentReference documentReference = fstore.collection("users").document(mAuth.getUid());
-//                            Map<String,Object> user = new HashMap<>();
-//                            user.put("Name","abc");
-//                            user.put("Email",email);
-//                            user.put("Phone","abc");
-//                            user.put("Pass",pass);
-//                            user.put("Fcm","abc");
-//                            user.put("Image","abc");
-//                            user.put("Department","abc");
-//                            user.put("About","abc");
-//                            user.put("Education","abc");
-//                            user.put("Experience","abc");
-//                            user.put("Uid",mAuth.getUid());
-//                            user.put("Finger","abc");
-//                            user.put("Face","abc");
-//
-//
-//                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-//                                @Override
-//                                public void onSuccess(Void unused) {
-//                                    Log.d("TAG","onSuccess: user profile is created for "+mAuth.getUid());
-//                                }
-//                            });
-//
-//
+
+                            getFCMToken();
                             Intent intent = new Intent(register_user.this, HomeScreen.class);
                             startActivity(intent);
                         }
@@ -141,5 +119,15 @@ public class register_user extends AppCompatActivity {
             }
         });
 
+    }
+
+    void getFCMToken() {
+        FirebaseMessaging.getInstance().getToken().addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                String token = task.getResult();
+                Log.i("My token", token);
+                fstore.collection("users").document(mAuth.getUid()).update("Fcm",token);
+            }
+        });
     }
 }

@@ -6,52 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".BiometricScan">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/shape1"
-        android:backgroundTint="#0098CB">
-    </View>
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@drawable/shape1"-->
+<!--        android:backgroundTint="#0098CB">-->
+<!--    </View>-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="200dp"
-        android:layout_centerInParent="true"
-        android:text="Confirm Your Fingerprint"
-        android:textColor="@color/white"
-        android:textSize="18dp">
-    </TextView>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/vector_finger"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="120dp">
-    </ImageView>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="200dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:text="Confirm Your Fingerprint"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="18dp">-->
+<!--    </TextView>-->
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/vector_finger"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="120dp">-->
+<!--    </ImageView>-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="70dp"
-        android:layout_centerInParent="true"
-        android:text="Touch the fingrprint sensor"
-        android:textColor="@color/white"
-        android:textSize="15dp">
-    </TextView>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="70dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:text="Touch the fingrprint sensor"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="15dp">-->
+<!--    </TextView>-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:text="Use Face Recognition"
-        android:textColor="@color/white"
-        android:textSize="18dp">
-    </TextView>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:text="Use Face Recognition"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="18dp">-->
+<!--    </TextView>-->
 </RelativeLayout>

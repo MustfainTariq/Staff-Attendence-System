@@ -19,15 +19,54 @@
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check In/Out"
-        android:textSize="25dp"
+        android:text="Check In"
+        android:textSize="20dp"
+        android:textStyle="bold"
         android:textColor="#000"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"/>
+
+    <TextView
+
+        android:layout_below="@id/logo"
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Out"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"/>
+
+
+    <TextView
+        android:layout_below="@id/text"
+        android:id="@+id/networktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network Status:"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_below="@id/text"
+        android:id="@+id/networkstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Connected"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="190dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:textColor="@color/white"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="100dp"
         android:layout_below="@id/text"
         android:id="@+id/checkinface"
         android:layout_width="match_parent"
@@ -35,7 +74,6 @@
         android:text="Facial Sign In"
         android:textAllCaps="false"
         android:textSize="20dp"
-
         android:background="@drawable/button_round"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
@@ -54,6 +92,29 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/white"
+        android:layout_marginTop="180dp"
+        android:layout_below="@id/checkinfinger"
+        android:id="@+id/checkstatus"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Check Network Status"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="@drawable/button_round"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:id="@+id/switch1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="30dp"></Switch>
 
 
 </RelativeLayout>
