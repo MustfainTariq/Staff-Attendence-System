@@ -42,7 +42,6 @@ public class BiometricScan extends AppCompatActivity {
         setContentView(R.layout.activity_biometric_scan);
 
 
-
         BiometricPrompt.PromptInfo promptInfo = new BiometricPrompt.PromptInfo.Builder()
                 .setTitle("Biometric login")
                 .setSubtitle("Use your fingerprint to login")
@@ -80,7 +79,7 @@ public class BiometricScan extends AppCompatActivity {
 
                                     if(value.exists()){
                                         if(!value.getString("checkin").equals("No Record")){
-                                            Toast.makeText(BiometricScan.this, "Already Checked In!", Toast.LENGTH_SHORT).show();
+                                            //Toast.makeText(BiometricScan.this, "Already Checked In!", Toast.LENGTH_SHORT).show();
                                         }
                                         else {
                                             documentReference.update("checkin", LocalTime.now().toString());
@@ -119,7 +118,7 @@ public class BiometricScan extends AppCompatActivity {
 
                                     if(value.exists()){
                                         if(!value.getString("checkout").equals("No Record")){
-                                            Toast.makeText(BiometricScan.this, "Already Checked Out!", Toast.LENGTH_SHORT).show();
+                                            //Toast.makeText(BiometricScan.this, "Already Checked Out!", Toast.LENGTH_SHORT).show();
                                         }
                                         else {
                                             documentReference.update("checkout", LocalTime.now().toString());

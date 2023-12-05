@@ -28,7 +28,6 @@ import com.google.firebase.messaging.FirebaseMessaging;
 public class register_user extends AppCompatActivity {
 
     Button btnRegister;
-    Button btnRegisterFingerPrint;
     Button btnRegisterFace;
     EditText id;
     EditText department;
@@ -53,7 +52,6 @@ public class register_user extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_user);
         btnRegister = findViewById(R.id.checkin);
-        btnRegisterFingerPrint = findViewById(R.id.reg_fingerprint);
         btnRegisterFace = findViewById(R.id.reg_face);
         id = findViewById(R.id.nuid);
         department = findViewById(R.id.department);
@@ -111,13 +109,7 @@ public class register_user extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnRegisterFingerPrint.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(register_user.this, register_fingerprint.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 
