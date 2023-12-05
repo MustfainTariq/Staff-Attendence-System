@@ -24,6 +24,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreSettings;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -65,6 +66,12 @@ public class ProfileFragment extends Fragment {
         experience = view.findViewById(R.id.qualification);
         DP = view.findViewById(R.id.profilephoto);
         storage = FirebaseStorage.getInstance();
+        FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()
+                .setPersistenceEnabled(true)
+                .build();
+
+        fstore.setFirestoreSettings(settings);
+
 
         documentReference = fstore.collection("users").document(mAuth.getUid());
         documentReference.addSnapshotListener((value, error) -> {
