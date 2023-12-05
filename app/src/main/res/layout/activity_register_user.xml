@@ -94,7 +94,7 @@
                 android:id="@+id/checkin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Register"
+                android:text="Sign In"
                 android:textAllCaps="false"
                 android:textSize="20dp"
 
